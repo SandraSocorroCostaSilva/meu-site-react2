@@ -1,0 +1,12 @@
+main {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 780px) {
+ div .item-portfolio{
+     width: 380px;
+     padding: 0;
+     margin: 100px auto;
+ }
+}
