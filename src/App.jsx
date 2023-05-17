@@ -4,7 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Curriculo from "./Components/Curriculo/Curriculo";
+import Curriculo from "./components/Curriculo/Curriculo";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contato from "./components/Contato/Contato";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
