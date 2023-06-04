@@ -33,12 +33,15 @@ function App() {
           experienciaProfissional: experienciaProfissional.data
         });
   
-        const portfolio = await api.get(`/portfolio`);
-        setPortfolio(portfolio.data);
+        const response = await api.get('/portfolio');
+       
+        setPortfolio(response.data);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
       }
     };
+
+    console.log(portfolio);
 
     React.useEffect(() => {
         fetchDados();
@@ -54,7 +57,7 @@ function App() {
       <Routes>
         
           <Route index element={<Curriculo curriculo={curriculo} />} />
-          <Route path="Portfolio" element={<Portfolio porfolio={portfolio} />} />
+          <Route path="Portfolio" element={<Portfolio portfolio={portfolio} />} />
           <Route path="Contato" element={<Contato />} />
         
       </Routes>

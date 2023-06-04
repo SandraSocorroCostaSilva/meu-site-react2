@@ -9,7 +9,7 @@ function Portfolio({portfolio}) {
     return (
      <main>
 
-       {portfolio?.map(
+       {portfolio.map(
         (item, index) =>
         <ItemPortfolio
         key={index}
